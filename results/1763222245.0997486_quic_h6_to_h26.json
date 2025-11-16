@@ -1,0 +1,8 @@
+{
+  "bytes_sent": 66715648,
+  "duration": 16.99266815185547,
+  "throughput_mbps": 31.40914535788903,
+  "chunk_size": 65536,
+  "server": "10.0.0.27:4433",
+  "protocol": "QUIC"
+}
