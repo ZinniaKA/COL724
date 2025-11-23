@@ -1,0 +1,5 @@
+bandwidth_mbps,delay,loss_pct,throughput_mbps,avg_rtt_ms
+15,1ms,2,15.17,68.44
+15,2ms,2,15.17,69.88
+15,5ms,2,15.16,72.31
+15,10ms,2,15.11,78.15
