@@ -1,0 +1,5 @@
+bandwidth_mbps,delay,loss_pct,bottleneck1_throughput_mbps,bottleneck2_throughput_mbps,avg_rtt_ms
+15,1ms,2,15.13,6.99,69.62
+15,2ms,2,15.17,6.99,70.84
+15,5ms,2,15.14,6.95,77.83
+15,10ms,2,15.14,6.97,83.4

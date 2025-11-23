@@ -1,0 +1,3 @@
+interface,throughput_mbps,duration_sec
+s1-eth21,15.14,60
+s2-eth12,6.97,60
