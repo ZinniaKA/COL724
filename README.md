@@ -56,6 +56,10 @@ sudo python3 experiment_runner_quic.py \
 
 ## Troubleshooting
 ```bash
+# Permission denied
+chmod +x <file_name> #or
+sudo python3 ...
+
 # Clean up network
 sudo mn -c
 
@@ -63,3 +67,4 @@ sudo mn -c
 # example
 cat /tmp/h20_server.log
 ```
+
