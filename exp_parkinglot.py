@@ -65,7 +65,7 @@ def extract_results(output_dir):
     
     try:
         if not os.path.exists(switches_file) or not os.path.exists(rtt_file):
-            print(f"  ⚠ Warning: Could not find result files in {output_dir}")
+            print(f"Warning: Could not find result files in {output_dir}")
             return None
         
         throughputs = {}
@@ -293,4 +293,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
