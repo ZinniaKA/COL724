@@ -28,7 +28,7 @@ python3 exp_dumbbell.py
 python3 exp_parkinglot.py
 ```
 
-### Basic Usage
+## Basic Usage
 
 ```bash
 sudo python3 experiment_runner_quic.py \
@@ -36,17 +36,9 @@ sudo python3 experiment_runner_quic.py \
     --bw <bandwidth> \
     --delay <delay> \
     --loss <loss_percentage> \
-    --duration <seconds>
-```
-Example 
-
-```bash
-sudo python3 experiment_runner_quic.py \
-    --topo dumbbell \
-    --bw 15 \
-    --delay 2ms \
-    --loss 2 \
-    --duration 30
+    --duration <seconds> \
+    --hosts <number of hosts> \
+    --output-dir <results folder>
 ```
 
 ### Parameters
@@ -61,28 +53,13 @@ sudo python3 experiment_runner_quic.py \
 | `--hosts` | Total number of hosts | 40 | 
 | `--output-dir` | Custom output directory | Auto-generated |
 
-## Advanced Usage
-
-**Modify host bandwidth** (dumbbell.py, line 13):
-```python
-self.addLink(hosts[i], s1, bw=5, delay="1ms")  # 5 Mbps instead of 1
-```
-
-**Change number of flows**:
-```bash
---hosts 20  # 10 flows instead of 20
-```
-
-**Custom queue size** (dumbbell.py, line 19):
-```python
-max_queue_size=500  # 500 packets instead of 100
-```
 
 ## Troubleshooting
 ```bash
-# Clean up
+# Clean up network
 sudo mn -c
 
-# Check logs 
+# Check logs
+# example
 cat /tmp/h20_server.log
 ```
